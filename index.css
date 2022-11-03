@@ -63,7 +63,7 @@
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(to bottom,  rgba(44, 22, 1, 0.4), rgba(68, 36, 0, 0.4)),
-    url('imagenes/Comida-mediterránea-la-más-saludable.jpg');
+    url('Comida-mediterránea-la-más-saludable.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -160,7 +160,7 @@
 
 #menu{
     background-image: linear-gradient(to bottom,  rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)),
-    url('imagenes/9d9469856e8a82a40a06d85d5a405033.jpg');
+    url('9d9469856e8a82a40a06d85d5a405033.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
