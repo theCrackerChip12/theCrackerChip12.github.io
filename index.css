@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+.titulos{
+    font-size: 3rem;
+    padding: 20px 0 0 0;
+}
+.hamburguesa{
+    display: none;
+}
+.plana{
+    display: none;
+}
+.navegador{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px 15px; 
+    background:rgba(255, 146, 70, .9);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.logotipo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    flex: 1;
+    color: #fff;
+    transition: letter-spacing .2s ease-in-out;
+}
+.lista{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    flex: 1.5;
+}
+.link{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.logotipo:hover{
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+.link:hover{
+    border-bottom: 2px solid #fff;
+}
+
+/*fin de las clases del navegador*/
+
+#home{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom,  rgba(44, 22, 1, 0.4), rgba(68, 36, 0, 0.4)),
+    url('imagenes/Comida-mediterránea-la-más-saludable.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.titulo{
+    color: #fff;
+    text-align: center;
+    line-height: 4rem;
+    margin-top: 4rem;
+    animation: titulo;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+}
+.titulo>h1{
+    font-size: 5rem;
+    font-weight: bolder;
+}
+
+.titulo>p{
+    font-weight: 100;
+    font-size: 1.2rem;
+}
+.titulo>a{
+    text-decoration: none;
+    color: #000; 
+    background: rgba(255, 146, 70, .8);
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 15px;
+    transition:color, background .1s;
+    margin: auto;
+}
+.titulo>a:hover{
+    color: #fff;
+    background: #ff9246;
+}
+
+@keyframes titulo {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/*apartado nosotros*/
+
+#nosotros{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border-bottom: 3px solid #000;
+}
+.nos-parrafo{
+    width: 50%;
+    padding: 20px;
+    font-size: 1.5rem;
+    border: 3px solid #000;
+    border-radius: 15px;
+}
+
+/*apartado galeria*/
+
+#galeria{
+    text-align:center;
+}
+#galeria>.contenedor{
+    background: unset;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.imagenes{
+    padding: 20px;
+}
+.imagenes:nth-child(1){
+    padding: 0 20px 20px 20px;
+}
+.imagenes>img{
+    min-width: 300px;
+    max-width: 500px;
+}
+
+/*apartado menu*/
+
+#menu{
+    background-image: linear-gradient(to bottom,  rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)),
+    url('imagenes/9d9469856e8a82a40a06d85d5a405033.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    color: #fff;
+}
+.contenedor{
+    background: rgba(0, 0, 0, .4);
+    border-radius: 25px;
+    width: 35rem;
+    padding: 30px 0;
+}
+.menus{
+    padding: 20px 30px;
+    width: 90%;
+    margin: auto;
+}
+.menus>h3{
+    padding: 5px 10px;
+}
+.mediterraneo{
+    font-size: 1.1rem;
+    padding: 0 20px;
+    line-height: 1.5rem;
+}
+
+/*apartado reseñas*/
+
+#reseñas{
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+.caja-reseña{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px 10px;
+}
+.reseña{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px auto;
+    height: 180px;
+    min-width:200px;
+    max-width: 300px;
+    background: rgba(0, 0, 0, .9);
+    color: #fff;
+    padding: 30px 60px 30px 40px;
+    text-align: left;
+    border-radius: 20px;
+}
+.reseña>h4{
+    margin:15px 0 0 0;
+    font-style: italic;
+}
+
+/*apartado contacto*/
+
+#contacto{
+    text-align: center;
+    padding: 50px;
+}
+.contactos{
+    margin: 10px auto;
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.directo{
+    text-align: left;
+    margin-bottom: 20px;
+}
+.telefono>h4{
+    font-size: 1.5rem;
+}
+.redes{
+    margin-top: 10px;
+}
+.redes>a{
+    color: #000;
+    font-size: 1.2rem;
+    padding: 0 10px 0 0;
+}
+.redes>a:nth-child(1):hover{
+    color: #05f;
+}
+.redes>a:nth-child(2):hover{
+    color: #08f;
+}
+.redes>a:nth-child(3):hover{
+    color: rgb(255, 0, 179);
+}
+.maps{
+    margin-left: 30px;
+}
+/*apartado footer*/
+
+footer{
+    width: 100%;
+    background: #000;
+    color: #fff;
+    font-size: .8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:20px;
+}
+
+@media screen and (min-width:300px) and (max-width:800px) {
+    .hamburguesa{
+        display: block;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        margin: 0 1rem 0 .5rem;
+        cursor: pointer;
+    }
+    .hamburguesa > i{
+        font-size: 3rem;
+        color: #fff;
+    }
+    .plana{
+        position: fixed;
+        top: 5.1rem;
+        left: 0;
+        display: block;
+        width: 200%;
+        height: 100vh;
+        background: rgba(0, 0, 0, .7);
+        transform: translateX(-110%);
+    }
+    .lista{
+        flex-direction: column;
+        top: 5.1rem;
+        left: 0;
+        position: absolute;
+        background: #fff;
+        width: 70%;
+        height: 90vh;
+        align-items: flex-start;
+        padding-left: 30px;
+        transform: translateX(-110%);
+        transition: transform .2s ease-in-out;
+    }
+    .link{
+        font-size: 1.8rem;
+        color: #000;
+        font-weight: bold;
+    }
+    .link:hover{
+        border: none;
+    }
+    .titulos{
+        font-size: 2.4rem;
+    }
+    .titulo{
+        line-height: 2.8rem;
+    }
+    .titulo>h1{
+        font-size: 3rem;
+    }
+    .titulo>p{
+        font-size: 1rem;
+    }
+    .listaVuelta{
+        transform: translateX(0);
+    }
+    .listaAtras{
+        transform: translateX(-110%);
+    }
+
+    /*apartado nosotros*/
+    
+    .nos-parrafo{
+        font-size: 1.2rem;
+        width: 80%;
+    }
+
+    /*apartado galeria*/
+
+    .imagenes>img{
+        min-width: 150px;
+        max-width: 400px;
+    }
+
+    /*apartado menú*/
+
+    .contenedor{
+        width: 25rem;
+    }
+    .menus{
+        padding: 5px 10px;
+    }
+    .mediterraneo{
+        font-size: .8rem;
+    }
+
+    /*apartado contacto*/
+
+    #contacto{
+        padding: 0;
+    }
+    .contactos{
+        flex-direction: column;
+    }
+    .directo{
+        text-align: center;
+        padding: 10px 0 30px;
+    }
+    .redes>a{
+        padding: 0;
+    }
+    .maps{
+        width: 95%;
+        margin: 0 auto 20px;
+    }
+    .maps>iframe{
+        width: 100%;
+    }
+    .fondo{
+        background: #000;
+    }
+}
